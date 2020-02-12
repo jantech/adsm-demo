@@ -14,3 +14,9 @@ jobs:
     - name: Run a multi-line script
       run: |
         ls -l
+        cd app
+        node -v
+        npm -v
+        npm install --slient
+        ng build --prod --output-path docs --base-href /adsm-demo/
+        
